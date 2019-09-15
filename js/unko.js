@@ -2,7 +2,7 @@ const main = document.getElementsByClassName('main');
 let cout = 0;
 main[0].addEventListener('click', function () {
     cout++;
-    if (cout === 1) {
+    if (cout === 10) {
         let clockz = document.createElement("p");
         clockz.id = 'clock';
         document.body.appendChild(clockz);
@@ -14,7 +14,7 @@ main[0].addEventListener('click', function () {
 var OK = true;
 var keyPress = "";
 document.addEventListener('keydown', (event) => {
-    if (cout >= 1) {
+    if (cout >= 10) {
 
         let keyName = event.key;
         keyPress = keyPress + keyName;
